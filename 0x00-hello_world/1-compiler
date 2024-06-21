@@ -1,0 +1,2 @@
+#!/bin/bash
+[ -z "$CFILE" ] && { echo "CFILE variable is not set."; exit 1; }; filename=$(basename -- "$CFILE"); filename="${filename%.*}"; gcc -c "$CFILE" -o "$filename.o"
