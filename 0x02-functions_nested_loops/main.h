@@ -1,7 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _putchar(char c);
-void print_alphabet_x10(void); /* Ensure this line is present */
+int _putchar(char c);  /* Prototype for the _putchar function */
+void print_alphabet(void);  /* Prototype for the print_alphabet function */
+void print_alphabet_x10(void);  /* Prototype for the print_alphabet_x10 function */
+int _islower(int c);  /* Prototype for the _islower function */
 
 #endif /* MAIN_H */
