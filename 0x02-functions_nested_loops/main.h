@@ -15,5 +15,8 @@ void times_table(void); /* Prototype for times_table function */
 
 int add(int, int);
 
+/* Other function prototypes and includes */
+
+void print_to_98(int n);
 
 #endif /* MAIN_H */
