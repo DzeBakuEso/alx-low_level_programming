@@ -7,5 +7,6 @@ void print_alphabet_x10(void);  /* Prototype for the print_alphabet_x10 function
 int _islower(int c);  /* Prototype for the _islower function */
 int _isalpha(int c);  /* Prototype for _isalpha function */
 int print_sign(int n); /* Prototype for print_sign function */
+int _abs(int n); /* Prototype for _abs function */
 
 #endif /* MAIN_H */
