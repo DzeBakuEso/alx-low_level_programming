@@ -9,5 +9,6 @@ int _isalpha(int c);  /* Prototype for _isalpha function */
 int print_sign(int n); /* Prototype for print_sign function */
 int _abs(int n); /* Prototype for _abs function */
 int print_last_digit(int n); /* Prototype for print_last_digit function */
+void jack_bauer(void); /* Prototype for jack_bauer function */
 
 #endif /* MAIN_H */
