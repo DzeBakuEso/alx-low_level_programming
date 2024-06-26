@@ -5,12 +5,14 @@
  */
 void print_alphabet(void)
 {
-    char letter;
+	/* Variable declaration */
+	char letter;
 
-    for (letter = 'a'; letter <= 'z'; letter++)
-    {
-        _putchar(letter);
-    }
-    _putchar('\n');
+	/* Loop through each letter from 'a' to 'z' */
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		_putchar(letter); /* Print the current letter */
+	}
+	_putchar('\n'); /* Print a newline character at the end */
 }
 
