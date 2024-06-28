@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/* Function prototypes */
+
 /**
  * _isupper - Checks for uppercase character
  * @c: The character to be checked
@@ -54,6 +56,23 @@ void more_numbers(void);
  * Return: void
  */
 void print_line(int n);
+
+/**
+ * print_diagonal - Draws a diagonal line in the terminal
+ * @n: The number of times the character \ should be printed
+ *
+ * Return: void
+ */
+void print_diagonal(int n);
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c);
 
 #endif /* MAIN_H */
 
