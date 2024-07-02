@@ -1,1 +1,0 @@
-This repository contains solutions to various tasks in the domain of C programming, specifically focused on foundational concepts and practices. Each task is designed to reinforce learning objectives essential for mastering C programming fundamentals.

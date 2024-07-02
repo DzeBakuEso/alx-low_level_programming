@@ -1,11 +1,13 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Function prototypes */
+/**
+ * Header guard to prevent double inclusion
+ */
 
 /**
  * _isupper - Checks for uppercase character
- * @c: The character to be checked
+ * @c: The character to check
  *
  * Return: 1 if c is uppercase, 0 otherwise
  */
@@ -13,7 +15,7 @@ int _isupper(int c);
 
 /**
  * _isdigit - Checks for a digit (0 through 9)
- * @c: The character to be checked
+ * @c: The character to check
  *
  * Return: 1 if c is a digit, 0 otherwise
  */
@@ -64,6 +66,14 @@ void print_line(int n);
  * Return: void
  */
 void print_diagonal(int n);
+
+/**
+ * print_square - Prints a square of '#' characters
+ * @size: The size of the square
+ *
+ * Return: void
+ */
+void print_square(int size);
 
 /**
  * _putchar - writes the character c to stdout
