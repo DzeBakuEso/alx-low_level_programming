@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * print_list - prints all the elements of a list_t list.
- * @h: pointer to the head of the list
+ * print_list - Prints all the elements of a list_t list
+ * @h: Pointer to the head of the list
  *
- * Return: the number of nodes
+ * Return: The number of nodes in the list
  */
 size_t print_list(const list_t *h)
 {
-    size_t count = 0;
+    size_t count = 0;  /* Initialize node count to 0 */
 
     /* Iterate through the linked list */
     while (h != NULL)
@@ -17,19 +17,17 @@ size_t print_list(const list_t *h)
         /* Check if the string is NULL */
         if (h->str == NULL)
         {
-            printf("[0] (nil)\n");
+            printf("[0] (nil)\n");  /* Print (nil) if the string is NULL */
         }
         else
         {
-            printf("[%u] %s\n", h->len, h->str);
+            printf("[%u] %s\n", h->len, h->str);  /* Print the length and string */
         }
-        /* Move to the next node */
-        h = h->next;
-        /* Increment the node count */
-        count++;
+
+        h = h->next;  /* Move to the next node */
+        count++;  /* Increment the node count */
     }
 
-    /* Return the number of nodes */
-    return count;
+    return count;  /* Return the number of nodes */
 }
 
