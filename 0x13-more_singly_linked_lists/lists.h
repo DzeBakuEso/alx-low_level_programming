@@ -19,5 +19,7 @@ typedef struct listint_s
 
 size_t print_listint(const listint_t *h); /* Function prototype for printing the list */
 
+size_t listint_len(const listint_t *h); /* Function prototype for getting the number of elements */
+
 #endif /* LISTS_H */
 
