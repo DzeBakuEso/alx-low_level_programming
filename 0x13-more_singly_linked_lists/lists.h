@@ -31,5 +31,7 @@ void free_listint2(listint_t **head); /* Function prototype for freeing the list
 
 void print_listint(const listint_t *h);
 
+/* Function prototypes */
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 #endif /* LISTS_H */
 
