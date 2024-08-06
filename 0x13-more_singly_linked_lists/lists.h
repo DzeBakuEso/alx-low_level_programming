@@ -35,3 +35,5 @@ void print_listint(const listint_t *h);
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 #endif /* LISTS_H */
 
+int sum_listint(listint_t *head);
+
