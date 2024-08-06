@@ -21,5 +21,7 @@ size_t print_listint(const listint_t *h); /* Function prototype for printing the
 
 size_t listint_len(const listint_t *h); /* Function prototype for getting the number of elements */
 
+listint_t *add_nodeint(listint_t **head, const int n); /* Function prototype for adding a node */
+
 #endif /* LISTS_H */
 
