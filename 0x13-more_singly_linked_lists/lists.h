@@ -23,5 +23,7 @@ size_t listint_len(const listint_t *h); /* Function prototype for getting the nu
 
 listint_t *add_nodeint(listint_t **head, const int n); /* Function prototype for adding a node */
 
+listint_t *add_nodeint_end(listint_t **head, const int n); /* Function prototype for adding a node at the end */
+
 #endif /* LISTS_H */
 
