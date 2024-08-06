@@ -29,5 +29,7 @@ void free_listint(listint_t *head); /* Function prototype for freeing the list *
 
 void free_listint2(listint_t **head); /* Function prototype for freeing the list and setting head to NULL */
 
+void print_listint(const listint_t *h);
+
 #endif /* LISTS_H */
 
