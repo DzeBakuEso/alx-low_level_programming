@@ -27,5 +27,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n); /* Function prototype
 
 void free_listint(listint_t *head); /* Function prototype for freeing the list */
 
+void free_listint2(listint_t **head); /* Function prototype for freeing the list and setting head to NULL */
+
 #endif /* LISTS_H */
 
