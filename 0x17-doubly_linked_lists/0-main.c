@@ -1,11 +1,10 @@
 #include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 #include "lists.h"
 
 /**
- * main - check the code
- *
+ * main - Check the code.
+ * 
  * Return: Always EXIT_SUCCESS.
  */
 int main(void)
@@ -32,3 +31,4 @@ int main(void)
     free(new);
     return (EXIT_SUCCESS);
 }
+
