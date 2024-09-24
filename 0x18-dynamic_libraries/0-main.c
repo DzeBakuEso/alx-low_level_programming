@@ -1,12 +1,14 @@
-#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
 /**
  * main - check the code
- * Return: Always 0.
+ *
+ * Return: Always EXIT_SUCCESS.
 */
 int main(void)
 {
-printf("Length of 'Dynamic': %d\n", _strlen("Dynamic"));
-return (0);
+printf("%d\n", _strlen("My Dyn Lib"));
+return (EXIT_SUCCESS);
 }
 
