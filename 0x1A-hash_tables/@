@@ -29,12 +29,12 @@ unsigned long int size;
 hash_node_t **array;
 } hash_table_t;
 /* Function prototypes */
-hash_table_t *hash_table_create(unsigned long int size);/*Create hash tble */
+hash_table_t *hash_table_create(unsigned long int size);  /* Create new hash tble */
 /* Header declarations */
 unsigned long int hash_djb2(const unsigned char *str);/* DJB2 hash function */
 /* Implement the key_index function for your hash table */
 unsigned long int key_index(const unsigned char *key, unsigned long int size);
 /* Add the prototype for the hash_table_set function */
-int hash_table_set(hash_table_t *ht, const char *key, const char *value);
+int hash_table_set(hash_table_t *ht, const char *key, const char *value); /*ble */
 
 #endif /* HASH_TABLES_H */
