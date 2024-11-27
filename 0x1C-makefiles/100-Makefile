@@ -1,30 +1,31 @@
-# Define variables
+# Define compiler and flags
 CC = gcc
-SRC = main.c school.c
-OBJ = $(SRC:.c=.o)
-NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# Define the name of the executable and source files
+NAME = school
+SRC = $(wildcard *.c)
+
+# Define object files
+OBJ = $(SRC:.c=.o)
 
 # Default rule to build the executable
 all: $(NAME)
 
-# Build the executable
+# Rule to create the executable
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-# Rule to clean up temporary files and the executable
+# Clean rule to remove Emacs, Vim files, and the executable
 clean:
 	$(RM) *~ $(NAME)
 
-# Rule to clean up object files
+# Oclean rule to remove object files
 oclean:
 	$(RM) $(OBJ)
 
-# Rule to clean up all files including temporary files, executable, and object files
+# Fclean rule to remove all generated files
 fclean: clean oclean
 
-# Rule to force recompilation of all source files
+# Rebuild everything from scratch
 re: fclean all
-
-# Prevent the Makefile from working without the header file m.h
-$(OBJ): m.h
