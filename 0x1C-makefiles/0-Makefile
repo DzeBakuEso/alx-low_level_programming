@@ -1,0 +1,4 @@
+# Makefile for task 0
+
+all:
+	gcc main.c school.c -o school
