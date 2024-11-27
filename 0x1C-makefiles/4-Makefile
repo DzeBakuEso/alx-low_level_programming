@@ -1,0 +1,28 @@
+# Variables
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+SRC = $(wildcard *.c)  # Automatically picks all .c files in the current directory
+OBJ = $(SRC:.c=.o)     # Converts .c to .o for object files
+NAME = school
+RM = rm -f
+
+# All rule: builds the executable
+all: $(NAME)
+
+# Rule to build the executable
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Rule to clean Emacs and Vim temporary files, along with the executable
+clean:
+	$(RM) *~ $(NAME)
+
+# Rule to remove only object files
+oclean:
+	$(RM) $(OBJ)
+
+# Rule to clean everything (Emacs/Vim temporary files, executable, and object files)
+fclean: clean oclean
+
+# Rule to force recompilation of all source files
+re: fclean all
