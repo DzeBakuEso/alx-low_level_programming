@@ -5,6 +5,7 @@ SRC = main.c school.c  # List source files explicitly
 OBJ = main.o school.o  # Corresponding object files
 NAME = school
 RM = rm -f
+TEMP = *~  # Temporary files to remove
 
 # Default rule (all): builds the executable
 all: $(NAME)
@@ -15,7 +16,7 @@ $(NAME): $(OBJ)
 
 # Clean rule: removes temporary files and the executable
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) $(TEMP) $(NAME)
 
 # Rule to delete object files only
 oclean:
