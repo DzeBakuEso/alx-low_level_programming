@@ -1,8 +1,8 @@
 # Variables
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic
-SRC = main.c school.c    # Explicitly list source files
-OBJ = main.o school.o    # Explicitly list object files
+SRC = main.c school.c
+OBJ = main.o school.o
 NAME = school
 RM = rm -f
 
@@ -14,12 +14,15 @@ $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 # Rule to compile source files into object files
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+main.o: main.c m.h
+	$(CC) $(CFLAGS) -c main.c -o main.o
 
-# Clean rule: removes temporary files and the executable
+school.o: school.c m.h
+	$(CC) $(CFLAGS) -c school.c -o school.o
+
+# Clean rule: removes temporary files
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) *~
 
 # Rule to delete object files only
 oclean:
@@ -27,6 +30,7 @@ oclean:
 
 # Rule to delete everything: temp files, executable, and object files
 fclean: clean oclean
+	$(RM) $(NAME)
 
 # Rebuild everything by deleting object files and executable
 re: fclean all
