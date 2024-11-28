@@ -1,3 +1,4 @@
+
 # Variables
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic
@@ -13,24 +14,24 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-# Rule to compile source files into object files
+# Rules for compiling object files explicitly (no wildcards)
 main.o: main.c m.h
 	$(CC) $(CFLAGS) -c main.c -o main.o
 
 school.o: school.c m.h
 	$(CC) $(CFLAGS) -c school.c -o school.o
 
-# Clean rule: removes temporary files
+# Rule to clean temporary files
 clean:
-	$(RM) *~
+	$(RM) *~ *.swp
 
-# Rule to delete object files only
+# Rule to clean object files only
 oclean:
 	$(RM) $(OBJ)
 
-# Rule to delete everything: temp files, executable, and object files
-fclean: clean oclean
+# Rule to clean everything (object files, executable, temporary files)
+fclean: clean
 	$(RM) $(NAME)
 
-# Rebuild everything by deleting object files and executable
+# Rule to force a full recompilation
 re: fclean all
