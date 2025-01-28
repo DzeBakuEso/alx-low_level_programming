@@ -1,3 +1,2 @@
-The space complexity of the allocate_map function is O(n * m).
+O(n * m)
 
-This is because the function allocates a 2D array of size n x m. It first allocates memory for n pointers (one for each row), and then for each row, it allocates m integers. Therefore, the total space used is proportional to the total number of integers in the 2D array, which is n * m.
