@@ -1,2 +1,12 @@
-O(sqrt(n))
+# Time Complexity of Jump Search in a Singly Linked List
 
+In a singly linked list of size `n`, using jump search with a step size of `sqrt(n)`:
+
+- The algorithm makes `sqrt(n)` jumps to find a block that contains the target.
+- Once the block is found, a linear search is performed within that block, taking at most `sqrt(n)` comparisons.
+
+Thus, the overall average time complexity is:
+
+**O(sqrt(n))**
+
+This time complexity is derived by considering both the jump steps and the linear search within the block.
