@@ -1,1 +1,2 @@
-printf("O(log(n))\n");
+O(log(n))
+
