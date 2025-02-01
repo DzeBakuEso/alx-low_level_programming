@@ -1,1 +1,1 @@
-O(log n)
+printf("O(log(n))\n");
